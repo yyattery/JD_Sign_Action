@@ -4,12 +4,12 @@ on:
   repository_dispatch:
   release:
     types: published
-  # push:
-  #   branches:
-  #     - master
-  schedule:
-     - cron: 0 20 * * *
-    #- cron: 0 0 13 22 2 ? 2021
+  push:
+    branches:
+      - master
+  #schedule:
+     #- cron: 0 20 * * *
+     #- cron: 0 0 13 22 2 ? 2021
   watch:
     types: started
     
